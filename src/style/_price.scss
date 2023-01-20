@@ -9,20 +9,99 @@
     padding: 32px 0;
   }
 
-  &__title {}
+  &__title {
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+
+    @include tablet {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+
+    @include mobile {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+  }
   
-  &__tagline {}
+  &__tagline {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 40px;
 
-  &__wrapper-content {}
+    @include mobile {
+      font-size: 12px;
+      margin-bottom: 24px;
+    }
+  }
 
-  &__list {}
+  &__wrapper-content {
+    display: flex;
+    gap: 32px;
 
-  &__item {}
+    &:before {
+      content: '';
+      flex-basis: 50%;
+      background-position: top;
+      background-size: cover;
+      background-image: url('img/price-wall.jpg');
 
-  &__item-title {}
+      @include tablet {
+        content: none;
+      }
+    }
+  }
 
-  &__item-count {}
+  &__content {
+    flex-basis: 50%;
 
-  &__link {}
+    @include tablet {
+      flex-basis: 100%;
+    }
+  }
+
+  &__list {
+    margin-bottom: 62px;
+
+    @include tablet {
+      margin-bottom: 40px;
+    }
+
+    @include mobile {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    padding-bottom: 7px;
+    border-bottom: 1px solid $light-gray;
+    margin-bottom: 24px;
+
+    @include mobile {
+      padding-bottom: 6px;
+      margin-bottom: 16px;
+      font-size: 12px;
+      line-height: 120%;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item-title {
+    text-transform: uppercase;
+  }
+
+  &__item-count {
+    white-space: nowrap;
+  }
 }
 
