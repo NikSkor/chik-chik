@@ -90,11 +90,11 @@ iframe {
   margin: 0 auto;
 
     @include laptop {
-      --max-width: 880px;
+      --max-width: 928px;
     }
   
     @include tablet {
-      --max-width: 620px;
+      --max-width: 672px;
     }
   
     @include mobile {
