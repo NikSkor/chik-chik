@@ -1,0 +1,33 @@
+.header {
+  &__container {
+    padding-top: 16px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid $light-gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  &__logo {
+    width: 70px;
+    height: 40px;
+  }
+
+  &__navigation {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 54px;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  // &__link {
+  // }
+}
+
+
+
+

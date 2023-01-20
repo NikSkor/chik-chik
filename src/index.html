@@ -5,30 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preload" href="fonts/inter-v12-latin_cyrillic-600.woff2" as="font" crossorigin>
-    <link rel="preload" href="fonts/inter-v12-latin_cyrillic-700.woff2" as="font" crossorigin>
-    <link rel="preload" href="fonts/inter-v12-latin_cyrillic-regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/raleway-v28-latin_cyrillic-regular.woff2" as="font" crossorigin>
+
 
     <title>Chik-chik - Барбершоп</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <img src="img/logo.svg" alt="Логотип барбершоп Chik-chik" class="header__logo">
-        <nav class="header__navigation navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item"><a href="#price" class="navigation__link">Стоимость услуг</a></li>
-            <li class="navigation__item"><a href="#about" class="navigation__link">О нас</a></li>
-          </ul>
-        <a href="#reserve" class="header__link main-link">Записаться</a>
-        </nav>
+        <div class="header__container">
+          <img src="img/logo.svg" alt="Логотип барбершоп Chik-chik" class="header__logo">
+          <nav class="header__navigation navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item"><a href="#price" class="navigation__link">Стоимость услуг</a></li>
+              <li class="navigation__item"><a href="#about" class="navigation__link">О нас</a></li>
+            </ul>
+          </nav>
+          <a href="#reserve" class="header__link main-link">Записаться</a>
+        </div>
       </div>
       <!-- /.container -->
     </header>
     <!-- /.header -->
     <main class="main">
       <section class="hero">
-        <div class="container">
+        <div class="container ">
           <h1 class="hero__title">
             <span class="visually-hidden">Барбер-шоп Chik-chik</span>
             <span>Мы создаём искусство,
@@ -38,7 +39,7 @@
             <div class="slider__container">
               <ul class="slider__list">
                 <li class="slider__item"><img src="img/photo01.jpg" class="slider__img" alt="Вариант стрижки 1"></li>
-                <li class="slider__item"><img src="img/photo02.jpg" class="slider__img" alt="Вариант стрижки 2"></li>
+                <li class="slider__item slider__item_active"><img src="img/photo02.jpg" class="slider__img" alt="Вариант стрижки 2"></li>
                 <li class="slider__item"><img src="img/photo03.jpg" class="slider__img" alt="Вариант стрижки 3"></li>
                 <li class="slider__item"><img src="img/photo04.jpg" class="slider__img" alt="Вариант стрижки 4"></li>
                 <li class="slider__item"><img src="img/photo05.jpg" class="slider__img" alt="Вариант стрижки 5"></li>
@@ -47,8 +48,8 @@
                 <li class="slider__item"><img src="img/photo08.jpg" class="slider__img" alt="Вариант стрижки 8"></li>
               </ul>
 
-              <button class="slider__arrow slider__arrow_left" aria-label="Прдыдущий слайд"></button>
-              <button class="slider__arrow slider__arrow_right" aria-label="Слудующий слайд"></button>
+              <button class="slider__arrow slider__arrow_left" aria-label="Предыдущий слайд"></button>
+              <button class="slider__arrow slider__arrow_right" aria-label="Следующий слайд"></button>
             </div>
           </div>
         </div>
@@ -61,7 +62,7 @@
           <p class="price__tagline">...бесценна, но всё же</p>
 
           <div class="price__wrapper-content">
-            <price class="content">
+            <div class="price__content">
               <ul class="price__list">
                 <li class="price__item"><span class="price__item-title">Стрижка ножницами</span><span class="price__item-count">2500 руб</span></li>
                 <li class="price__item"><span class="price__item-title">Стрижка машинкой</span><span class="price__item-count">2000 руб</span></li>
@@ -72,7 +73,7 @@
                 <li class="price__item"><span class="price__item-title">Оформление бровей</span><span class="price__item-count">1000 руб</span></li>
               </ul>
               <a href="#reserve" class="price__link main-link">Записаться</a>
-            </price>
+            </div>
           </div>
         </div>
         <!-- /.container -->
