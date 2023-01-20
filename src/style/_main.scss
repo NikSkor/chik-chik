@@ -1,0 +1,29 @@
+.main-link {
+  display: inline-block;
+  background-color: $secondColor;
+  border-radius: 4px;
+  padding: 13px 46px;
+  color: $mainColor;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover:not(:disabled) {
+    background-color: #EFE7BE;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $secondColor;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+  }
+
+  @include mobile {
+    padding: 10px 24px;
+    font-size: 12px;
+  }
+}

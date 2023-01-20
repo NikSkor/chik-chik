@@ -4,8 +4,8 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -13,6 +13,11 @@ body {
   min-width: 320px;
   min-height: 100vh;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  background-color: $mainColor;
+  color: $secondColor;
+  font-family: Raleway, sans-serif;
 }
 
 
@@ -78,8 +83,8 @@ iframe {
 */
 
 .container {
-  --max-width: 1180px;
-  --padding: 30px;
+  --max-width: 1216px;
+  --padding: 48px;
   max-width: calc(var(--max-width) + var(--padding) * 2);
   padding: 0 var(--padding);
   margin: 0 auto;
@@ -93,7 +98,7 @@ iframe {
     }
   
     @include mobile {
-      --padding: 15px;
+      --padding: 24px;
     }
 }
 
