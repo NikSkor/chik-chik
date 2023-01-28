@@ -1,0 +1,55 @@
+.radio {
+
+  &__input {
+    position: absolute;
+    appearance: none; //отключает точки
+    -moz-appearance: none;
+
+  &:focus + .radio__label,
+  &:checked+.radio__label {
+      color: $mainColor;
+      background-color: $secondColor;
+  }
+  }
+  
+  &__label {
+    display: inline-block;
+    padding: 16px 24px;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid $light-gray;
+    border-radius: 36px;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $hover-color;
+    }
+
+  }
+
+  &__label_spec {
+    padding-left: 52px;
+    background-image: map-get($specs, spec1);
+    background-size: 36px;
+    background-position: 8px;
+    background-repeat: no-repeat;
+
+    &-1 {
+      background-image: map-get($specs, spec1);
+    }
+    &-2 {
+      background-image: map-get($specs, spec2);
+    }
+    &-3 {
+      background-image: map-get($specs, spec3);
+    }
+    &-4 {
+      background-image: map-get($specs, spec4);
+    }
+    &-5 {
+      background-image: map-get($specs, spec5);
+    }
+  }
+}
