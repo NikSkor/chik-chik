@@ -1,0 +1,58 @@
+.reserve {
+  padding: 62px 0 124px;
+
+  &__title {
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  &__list {
+    padding-left: 24px;
+    margin: 0 0 72px;
+    line-height: 150%;
+  }
+
+  &__item {
+    margin-bottom: 8px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__form {
+
+    &-container {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__fieldset {
+    padding: 0;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 72px;
+    gap: 8px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__legend {
+    flex-basis: 100%;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  &__fieldset_sub {
+    flex-basis: 100%;
+    margin-bottom: 24px;
+  }
+}
