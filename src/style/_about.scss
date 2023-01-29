@@ -1,31 +1,92 @@
 .about {
   padding: 62px 0;
 
+  @include tablet {
+    padding: 40px 0;
+  }
+
+  @include mobile {
+    padding: 32px 0;
+  }
+
   &__title {
     font-weight: 400;
     font-size: 40px;
     text-transform: uppercase;
     max-width: 700px;
     margin-bottom: 24px;
+
+    @include tablet {
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+
+    @include mobile {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
   }
   
   &__description {
     line-height: 150%;
     max-width: 700px;
     margin-bottom: 72px;
+
+    @include laptop {
+      margin-bottom: 46px;
+    }
+
+    @include tablet {
+      margin-bottom: 32px;
+    }
+
+    @include mobile {
+      font-size: 12px;
+    }
   }
 
   &__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 384px);
-    gap: 24px 32px;
+    grid-template-columns: repeat(auto-fill, minmax(384px, 1fr));
+    gap: 24px;
+
+    @include laptop {
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    }
+
+    @include tablet {
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+
+    @include mobile {
+      grid-template-columns: minmax(272px, 1fr);
+    }
   }
 
   &__item {
-    padding: 6px 6px 6px 96px;
+    padding: 6px 0 6px 96px;
     background-position: left;
     background-repeat: no-repeat;
     background-size: 80px;
+    min-height: 80px;
+
+    @include laptop {
+      padding-top: 96px;
+      background-position: top left;
+      padding-left: 0;
+    }
+
+    @include tablet {
+      padding-left: 96px;
+      background-position: left;
+      padding-top: 0;
+    }
+    
+    @include mobile {
+      padding-left: 72px;
+      min-height: 64px;
+      background-size: 64px;
+    }
 
     &_top {
       background-image: url('img/top.svg');
@@ -45,11 +106,19 @@
       font-size: 22px;
       line-height: 120%;
       text-transform: uppercase;
+
+    @include tablet {
+        font-size: 16px;
+      }
     }
 
     &-description {
       margin: 0;
       line-height: 130%;
+
+      @include tablet {
+        font-size: 16px;
+      }
     }
   }
 }

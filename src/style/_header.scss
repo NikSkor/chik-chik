@@ -24,8 +24,12 @@
     }
   }
 
-  // &__link {
-  // }
+  &__container {
+    @include mobile {
+      padding-top: 12px;
+      padding-bottom: 13px;
+    }
+  }
 }
 
 
