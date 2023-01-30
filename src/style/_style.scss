@@ -18,6 +18,7 @@ body {
   background-color: $mainColor;
   color: $secondColor;
   font-family: Raleway, sans-serif;
+  font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 
