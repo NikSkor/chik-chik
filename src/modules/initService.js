@@ -8,10 +8,10 @@ export const initService = () => {
   addPreload(priceList);
   addPreload(reserveFieldsetService);
 
-  fetch(API_URL)
+  fetch(`${API_URL}/api`)
   .then(response => response.json())
   .then(data => {
-    console.log('data: ', data);
+    // console.log('data: ', data);
     renderPrice(priceList, data);
     removePreload(priceList);
     return data;
