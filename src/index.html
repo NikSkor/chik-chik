@@ -12,8 +12,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="header__container">
+      <div class="container header__container">
           <img src="img/logo.svg" alt="Логотип барбершоп Chik-chik" class="header__logo">
           <nav class="header__navigation navigation">
             <ul class="navigation__list">
@@ -22,7 +21,6 @@
             </ul>
           </nav>
           <a href="#reserve" class="header__link main-link">Записаться</a>
-        </div>
       </div>
       <!-- /.container -->
     </header>
@@ -92,7 +90,7 @@
             </li>
             <li class="about__item about__item_master">
               <h3 class="about__item-title">Мастера бород и усов</h3>
-              <p class="about__item-description">Мы заботливо уложим вашу бороду и усы</p>
+              <p class="about__item-description">Мы заботливо уложим вашу бороду и&nbsp;усы</p>
             </li>
             <li class="about__item about__item_guarantee">
               <h3 class="about__item-title">Гарантия качества</h3>
@@ -111,9 +109,9 @@
             <li class="reserve__item">Выберите специалиста</li>
             <li class="reserve__item">Выберите удобный день и время</li>
           </ol>
-          <form action="" class="reserve__form">
+          <form class="reserve__form">
             <div class="reserve__form-container">
-              <fieldset class="reserve__fieldset">
+              <fieldset class="reserve__fieldset reserve__fieldset_service">
                 <legend class="reserve__legend">
                   Услуга
                 </legend>
@@ -146,7 +144,7 @@
                   <span class="radio__label">Оформление бровей</span>
                 </label>
               </fieldset>
-              <fieldset class="reserve__fieldset">
+              <fieldset class="reserve__fieldset" name="fieldspec">
                 <legend class="reserve__legend">
                   Специалист
                 </legend>
@@ -171,11 +169,11 @@
                   <span class="radio__label radio__label_spec radio__label_spec-5">Евгений</span>
                 </label>
               </fieldset>
-              <fieldset class="reserve__fieldset">
+              <fieldset class="reserve__fieldset" name="fielddata">
                 <legend class="reserve__legend">
                   Дата и время
                 </legend>
-                <fieldset class="reserve__fieldset reserve__fieldset_sub">
+                <fieldset class="reserve__fieldset reserve__fieldset_sub" name="fieldmonth">
                   <label class="radio">
                     <input class="radio__input" type="radio" name="month">
                     <span class="radio__label">Январь</span>
@@ -189,7 +187,7 @@
                     <span class="radio__label">Март</span>
                   </label>
                 </fieldset>
-                <fieldset class="reserve__fieldset reserve__fieldset_sub">
+                <fieldset class="reserve__fieldset reserve__fieldset_sub" name="fieldday">
                   <label class="radio">
                     <input class="radio__input" type="radio" name="day">
                     <span class="radio__label">18 января</span>
@@ -207,7 +205,7 @@
                     <span class="radio__label">21 января</span>
                   </label>
                 </fieldset>
-                <fieldset class="reserve__fieldset reserve__fieldset_sub">
+                <fieldset class="reserve__fieldset reserve__fieldset_sub" name="fieldtime">
                   <label class="radio">
                     <input class="radio__input" type="radio" name="time">
                     <span class="radio__label">10:00-11:30</span>
@@ -239,7 +237,7 @@
                 </fieldset>
               </fieldset>
             </div>
-            <button class="reserve__btn main-link">Записаться</button>
+            <button class="reserve__btn main-link" disabled id="btn">Записаться</button>
           </form>
         </div>
         <!-- /.container -->
@@ -249,25 +247,25 @@
     <!-- /.main -->
     <footer class="footer">
       <div class="container">
-        <img src="img/logo.svg" alt="Логотип барбершоп Chik-chik" class="header__logo footer__logo">
-        <nav class="header__navigation navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item"><a href="#price" class="navigation__link">Стоимость услуг</a></li>
-            <li class="navigation__item"><a href="#about" class="navigation__link">О нас</a></li>
-          </ul>
-        </nav>
-        <div class="footer__copyright">
-          <p>© chik chik, 2023</p>
-        </div>
-        <div class="footer__development footer-development">
-          <ul class="footer-development__list">
-            <li class="footer-development__item">
-              <a href="https://t.me/Mrshmallowww" class="footer__link">Designer: Anastasia Ilina</a>
+        <div class="footer__container">
+          <img src="img/logo.svg" alt="Логотип барбершоп Chik-chik" class="footer__logo">
+          <div class="footer__navigation navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item"><a href="#price" class="navigation__link">Стоимость услуг</a></li>
+              <li class="navigation__item"><a href="#about" class="navigation__link">О нас</a></li>
+            </ul>
+          </div>
+          <ul class="footer__developers">
+            <li class="footer__developer">Designer:&nbsp;
+              <a href="https://t.me/Mrshmallowww" class="footer__link">Anastasia Ilina</a>
             </li>
-            <li class="footer-development__item">
-              <a href="https://t.me/Floriel" class="footer__link">Developer: Nikita Skorodumov</a>
+            <li class="footer__developer">Developer:&nbsp;
+              <a href="https://t.me/Floriel" class="footer__link">Nikita Skorodumov</a>
             </li>
           </ul>
+          <div class="footer__copyright">
+            <p>© chik chik, 2023</p>
+          </div>
         </div>
       </div>
       <!-- /.container -->
