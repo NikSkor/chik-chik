@@ -1,4 +1,6 @@
 export const API_URL = 'https://thoughtful-historical-knife.glitch.me/';
+// export const API_URL = 'http://localhost:2002';
+
 export const year = new Date().getFullYear();
 
 // GET /api - получить список услуг
